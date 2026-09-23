@@ -50,6 +50,8 @@ Working instructions for any agent editing this site. Read this file before maki
 ## Site maintenance checklist (every change)
 - **New page?** Add the GA4 snippet to `<head>`, add canonical + OG/Twitter meta tags,
   add the page to `sitemap.xml`, and link it from the nav/footer where appropriate.
+- **URLs are pretty:** link and canonicalize `/gatherings`, never `/gatherings.html`
+  (Cloudflare 308-redirects `.html` → pretty). Same for `/blog/`, never `/blog/index.html`.
 - **New blog post?** Copy `blog/_template.html` → `blog/<slug>.html`, fill in every
   PLACEHOLDER, then: add a card to `blog/index.html`, an `<item>` to `blog/feed.xml`,
   and a `<url>` entry to `sitemap.xml`.
