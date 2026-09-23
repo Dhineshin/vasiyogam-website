@@ -616,3 +616,28 @@ section.block.tight { padding: 2.25rem 0; }
   .schedule-table td { padding: 0.35rem 1.25rem; border: none; }
   .schedule-table td.day { padding-top: 0.9rem; font-size: 1.05rem; }
 }
+
+/* ---- Reflections (blog) ---- */
+.topic-kicker {
+  color: var(--saffron-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+.topic-chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.chip {
+  border: 1px solid var(--saffron);
+  color: var(--saffron-deep);
+  background: var(--paper);
+  border-radius: 999px;
+  padding: 0.3rem 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.post { max-width: 44rem; margin: 0 auto; }
+.post p { line-height: 1.85; }
+.post .post-meta { color: var(--ink-soft); font-size: 0.95rem; margin: 0.25rem 0 1.5rem; }
+.post .post-signoff { text-align: center; font-weight: 700; color: var(--blue-900); margin-top: 2rem; }
+.post-nav { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--saffron-soft); }
