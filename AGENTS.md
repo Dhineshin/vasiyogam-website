@@ -46,3 +46,14 @@ Working instructions for any agent editing this site. Read this file before maki
 ## Workflow
 - Edit files, commit to `main`, Cloudflare Pages deploys automatically.
 - Verify a deploy by loading https://vasiyogam.com (allow ~1 minute after push).
+
+## Site maintenance checklist (every change)
+- **New page?** Add the GA4 snippet to `<head>`, add canonical + OG/Twitter meta tags,
+  add the page to `sitemap.xml`, and link it from the nav/footer where appropriate.
+- **New blog post?** Copy `blog/_template.html` → `blog/<slug>.html`, fill in every
+  PLACEHOLDER, then: add a card to `blog/index.html`, an `<item>` to `blog/feed.xml`,
+  and a `<url>` entry to `sitemap.xml`.
+- Blog lives at `/blog/` ("Reflections · சிந்தனைகள்"). Topics: Practice, Siddhar Wisdom,
+  Meiporul, Dhyanam, Gatherings. RSS feed: `/blog/feed.xml`.
+- Never publish placeholder spiritual content — posts and pages carry only
+  owner-approved wording.
